@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+*{
+	font-family: 'Lobster', cursive;
+}
+
+h1{
+	width: 150px;
+	color: black;
+	text-shadow: 0px 0px 50px white;
+	z-index: 50;
+}
+
+article{
+	max-width: 25%;
+	top: 0;
+	display: inline-block;
+}
+
+#aretha{
+	background-image: url(../img/aretha.jpg);
+	left: 0;
+}
+
+#diane{
+	background-image: url(../img/diane.jpg);
+	left: 25px;
+}
+
+#dionne{
+	background-image: url(../img/dionne.jpg);
+	left: 50px;
+}
+
+#etta{
+	background-image: url(../img/etta.jpg);
+	left: 75px;
+}
