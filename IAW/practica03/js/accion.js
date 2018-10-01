@@ -12,9 +12,20 @@ $(function () {
             method: 'GET'
         });
         jqxhr.done(function(datos){
+            var texto = "";
             for(var persona of datos["results"]){
                 $("body").append(
-                    "<p>"+persona["name"]["first"]+"</p>"
+                    "<div class='fila'>";
+                        "<figure>";
+                            "<img src='" +persona["picture"]["large"]+"'>";
+                        "</figure>";
+                    "</div>";
+                    "<div class='texto'>"
+                        "<p>"+persona["name"]["first"]+"</p>";
+                        "<p>"+persona["name"]["last"]+"</p>";
+                        "<p>"+persona["email"]+"</p>";
+                        "<p>"+persona["location"]["street"]+persona["location"]["postcode"]+persona["location"]["city"]+persona["location"]["state"]+"</p>";
+
                 )
             }
 
